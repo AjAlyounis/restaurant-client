@@ -35,8 +35,6 @@ h3 {
 }
 /* ----------------------------- */
 
-
-
 /* HEADER */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -135,7 +133,7 @@ nav {
   width: 70%;
   margin-left: 15%;
   line-height: 1.5;
-  margin-bottom:20px
+  margin-bottom: 20px;
 }
 h2 {
   font-size: 2.8rem;
@@ -156,21 +154,21 @@ h2::after {
 .box {
   padding: 2%;
 }
-h3{
-  font-size:2.1rem;
-  margin-bottom: 15px
+h3 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
 }
 
 .features > .row > .box > p {
-  font-size:1.4rem;
+  font-size: 1.6rem;
   line-height: 1.4;
 }
 
 .icon-feature {
   font-size: 4rem;
-  color:#ee5a24;
-  display:block;
-  margin-bottom:10px; 
+  color: #ee5a24;
+  display: block;
+  margin-bottom: 10px;
 }
 
 /* MEALS */
@@ -179,25 +177,24 @@ h3{
   padding: 0;
 }
 .meals-images {
-  width:100%;
-  display:flex;
-  height:450px;
+  width: 100%;
+  display: flex;
+  height: 360px;
 }
 .meals-images li {
-  width:25%;
-  margin:0;
+  width: 25%;
+  margin: 0;
   overflow: hidden;
   background: #000;
 }
 .meals-images li figure {
-  width:100%;
-  height:100%;
-  margin:0;
-
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
-.meals-images li figure img{
-  width:100%;
-  height:100%;
+.meals-images li figure img {
+  width: 100%;
+  height: 100%;
   transform: scale(1.15);
   transition: all 0.4s;
   opacity: 0.6;
@@ -206,4 +203,60 @@ h3{
   transform: scale(1);
   z-index: 2;
   opacity: 1;
+}
+
+/* HOW IT WORKS */
+
+.apps {
+  background-color: rgb(255, 250, 250)
+}
+.steps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+
+}
+.steps .img {
+  margin-right: 0 5%;
+}
+.step {
+  width: 50%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.step div {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.step div p {
+  font-size: 1.8rem;
+  margin-left: 1%;
+}
+.step div p:first-child {
+  border: 1px solid #ee5a24;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 2%;
+  width: 33px;
+  height: 33px;
+  padding: 0.7%;
+  font-size: 1.8rem;
+  color: #ee5a24;
+}
+
+.btn-store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 9%;
+}
+.btn-store > a {
+  width: 50%;
+}
+.btn-store > a img {
+  width: 80%;
+  height: auto;
 }
