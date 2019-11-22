@@ -21,9 +21,20 @@ a {
   text-decoration: none;
 }
 ul {
-  list-style: none
+  list-style: none;
+}
+section {
+  padding: 80px 0;
+}
+/* HEADINGS */
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
 }
 /* ----------------------------- */
+
 
 
 /* HEADER */
@@ -41,16 +52,6 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-h1 {
-  margin: 20px 0;
-  color: #fff;
-  font-size: 3.8rem;
-  font-weight: 300;
-  text-transform: capitalize;
-  word-spacing: 1px;
-  word-spacing: 4px;
-}
-
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -61,13 +62,12 @@ h1 {
   border: 1px solid #ee5a24;
   margin-right: 20px;
   text-transform: capitalize;
-  transition: all 0.4s
+  transition: all 0.4s;
 }
 .btn:hover {
   background-color: rgb(240, 70, 8);
   border: 1px solid #fff;
 }
-
 
 .btn-full:link,
 .btn-full:visited {
@@ -77,24 +77,33 @@ h1 {
 .btn-ghost {
   color: #ee5a24;
 }
-.btn-ghost:hover{
-  color:#fff
+.btn-ghost:hover {
+  color: #fff;
 }
 
+h1 {
+  font-size: 3.8rem;
+  color: #fff;
+  word-spacing: 4px;
+  margin: 0 0 20px 0;
+  letter-spacing: 1px;
+}
+
+/* -------------------- */
 
 /*  */
-nav{
-  width:100%;
-  height:80px;
+nav {
+  width: 100%;
+  height: 80px;
   /* border:20px solid #fff; */
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  margin-top:20px;
+  margin-top: 20px;
   position: absolute;
-  align-items: center
+  align-items: center;
 }
 .logo {
-  width:100px;
+  width: 100px;
   height: 100px;
   background-color: #ee5a24;
   border-radius: 50%;
@@ -102,19 +111,64 @@ nav{
   margin-left: 100px;
 }
 .main-nav {
-  margin-right:100px;
+  margin-right: 100px;
   display: flex;
   justify-content: space-around;
-  width:40%;
+  width: 40%;
 }
 .main-nav li a {
-  color:#fff;
+  color: #fff;
   padding: 10px 20px;
   font-size: 1.6rem;
   text-transform: capitalize;
   border-bottom: 3px solid transparent;
-  transition: all 0.4s
+  transition: all 0.4s;
 }
-.main-nav li a:hover{
-  border-bottom: 3px solid  #ee5a24;
+.main-nav li a:hover {
+  border-bottom: 3px solid #ee5a24;
+}
+/* ------------------------- */
+
+/* FEATURES */
+
+.features > .row > p {
+  font-size: 1.6rem;
+  width: 70%;
+  margin-left: 15%;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  word-spacing: 2px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: #ee5a24;
+  content: "";
+  width: 200px;
+  margin: 30px auto;
+}
+
+.box {
+  padding: 2%;
+}
+h3{
+  font-size:2.1rem;
+  margin-bottom: 15px
+}
+
+.features > .row > .box > p {
+  font-size:1.4rem;
+  line-height: 1.4
+}
+
+.icon-feature {
+  font-size: 4rem;
+  color:#ee5a24;
+  display:block;
+  margin-bottom:10px; 
 }
