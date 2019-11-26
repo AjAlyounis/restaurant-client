@@ -400,3 +400,37 @@ cite img {
   width: 100%;
   text-align: center;
 }
+
+
+/* ------------------------ */
+/* FORM */
+
+form{
+  display:flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+form div {
+  width:60%;
+  margin: 5px auto;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: center
+}
+form > div > label {
+  width:30%;
+}
+#name , #email {
+  width:60%;
+  margin-left:10%;
+  padding: 5px;
+  font-size: 1.4rem
+}
+form > div > h3 {
+  text-transform: none;
+  font-size: 2rem;
+  margin-bottom: 20px
+}
+select {
+  font-size: 1.2rem
+}
