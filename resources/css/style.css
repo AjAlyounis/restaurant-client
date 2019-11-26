@@ -103,9 +103,9 @@ nav {
 .logo {
   width: 100px;
   height: 100px;
-  background-color: #ee5a24;
   border-radius: 50%;
   margin-left: 100px;
+  border: 2px solid #ee5a24;
 }
 .main-nav {
   margin-right: 100px;
@@ -330,17 +330,14 @@ blockquote {
   font-size: 2rem;
 }
 
-blockquote:before {
+blockquote:before,
+blockquote:after {
   display: block;
   content: ",,";
   font-size: 2rem;
   width: 20px;
 }
 blockquote:after {
-  display: block;
-  content: ",,";
-  font-size: 2rem;
-  width: 20px;
   float: right;
 }
 cite {
@@ -451,6 +448,10 @@ textarea {
   font-style: italic;
   width: 60%;
 }
+
+
+/* ----------------------------- */
+/* FOOTER */
 
 footer {
   background: #333;
