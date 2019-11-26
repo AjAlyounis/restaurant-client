@@ -45,7 +45,7 @@ header {
   height: 100vh;
   background-attachment: fixed;
 }
-.hero-image {
+.hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -103,16 +103,16 @@ nav {
 .logo {
   width: 100px;
   height: 100px;
-  background-color: #ee5a24;
   border-radius: 50%;
-  float: left;
   margin-left: 100px;
+  border: 2px solid #ee5a24;
 }
 .main-nav {
   margin-right: 100px;
   display: flex;
   justify-content: space-around;
-  width: 40%;
+  width: 60%;
+  margin-right: 5%;
 }
 .main-nav li a {
   color: #fff;
@@ -220,39 +220,43 @@ h3 {
 }
 .steps .img {
   margin-right: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .step {
-  width: 50%;
   margin-right: 5%;
   display: flex;
   flex-direction: column;
 }
 .step div {
-  margin: 10px;
   display: flex;
+  margin-top: 12px;
+  justify-content: flex-start;
   align-items: center;
+  padding: 10px;
 }
 .step div p {
   font-size: 1.8rem;
-  margin-left: 1%;
 }
-.step div p:first-child {
-  border: 1px solid #ee5a24;
-  text-align: center;
-  border-radius: 50%;
-  margin-right: 2%;
-  width: 33px;
-  height: 33px;
-  padding: 0.7%;
-  font-size: 1.8rem;
+.step span {
+  font-size: 1.4rem;
   color: #ee5a24;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ee5a24;
 }
 
 .btn-store {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 9%;
+  padding-top: 12px;
 }
 .btn-store > a {
   width: 50%;
@@ -260,10 +264,11 @@ h3 {
 .btn-store > a img {
   width: 80%;
   height: auto;
+  border-radius: 10px;
 }
 
 /* ---------------------------- */
-/* CITIES */
+/* LOCATIONS */
 
 .box img {
   width: 100%;
@@ -299,7 +304,7 @@ h3 {
 /* CUSTOMERS */
 .customers-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/resources/css/images/customers.jpg");
+    url("images/customers.jpg");
   background-attachment: fixed;
   color: #fff;
 }
@@ -325,17 +330,14 @@ blockquote {
   font-size: 2rem;
 }
 
-blockquote:before {
+blockquote:before,
+blockquote:after {
   display: block;
   content: ",,";
   font-size: 2rem;
   width: 20px;
 }
 blockquote:after {
-  display: block;
-  content: ",,";
-  font-size: 2rem;
-  width: 20px;
   float: right;
 }
 cite {
@@ -361,18 +363,20 @@ cite img {
   width: 100%;
 }
 .plan {
-  width: 32%;
+  width: 33%;
   padding: 2%;
+  height: 100%;
 }
 .sub_plan {
   background-color: #fff;
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   font-size: 2rem;
   box-shadow: 0px 2px 3px rgb(202, 199, 199);
   border-radius: 5px;
+  height: 100%;
 }
 .sub_plan div {
   padding: 25px;
@@ -410,8 +414,9 @@ form {
   font-size: 2rem;
 }
 form div {
-  width: 60%;
+  width: 80%;
   margin: 5px auto;
+  display: flex;
   justify-content: space-around;
   padding: 20px;
   text-align: center;
@@ -434,11 +439,19 @@ form > div > h3 {
 select {
   font-size: 1.2rem;
 }
+.textarea {
+  width: 100%;
+}
 textarea {
   padding: 30px 40px;
   font-size: 1.2rem;
   font-style: italic;
+  width: 60%;
 }
+
+
+/* ----------------------------- */
+/* FOOTER */
 
 footer {
   background: #333;
@@ -448,36 +461,36 @@ footer {
   text-align: center;
   padding: 50px;
   font-size: 2rem;
-  color:rgb(151, 142, 142);
+  color: rgb(151, 142, 142);
 }
 footer div {
-  margin-top:40px;
+  margin-top: 40px;
 }
 .footer {
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
 .footer div ul {
-  width:60%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
 }
-.footer div ul a {
-  color:rgb(151, 142, 142);
+footer div ul a {
+  color: rgb(151, 142, 142);
   font-size: 1.6rem;
-  transition: all .2s;
+  transition: all 0.2s;
 }
-.footer div ul a:hover{
-  color:#ee5a24
+.footer div ul a:hover {
+  color: #ee5a24;
 }
 .nav-footer {
-  width:50%;
+  width: 50%;
 }
 .social-media {
-  width:50%;
+  width: 50%;
 }
-.social-media i{
-  font-size: 2rem
+.social-media i {
+  font-size: 2rem;
 }
