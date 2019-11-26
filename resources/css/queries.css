@@ -1,0 +1,284 @@
+/* big screen  */
+@media only screen and (max-width: 1200px) {
+  .hero-text {
+    width: 100%;
+    padding: 0 2%;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+/* big tablets */
+@media only screen and (max-width: 1023px) {
+  section {
+    padding: 60px 0;
+  }
+  .main-nav {
+    width: 80%;
+  }
+  .main-nav li a {
+    font-size: 1.4rem;
+  }
+  .logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 40px;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+  }
+  .features > .row > p {
+    font-size: 1.3rem;
+    width: 60%;
+    margin-left: 20%;
+  }
+  .features > .row > .box > p {
+    font-size: 1.2rem;
+  }
+  .meals-images {
+    height: 250px;
+  }
+  .steps .img {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  .step {
+    width: 70%;
+  }
+  .step div {
+    margin-top: 5px;
+    padding: 2px;
+  }
+  .step div p {
+    font-size: 1.4rem;
+  }
+  .steps .img img {
+    width: 150%;
+    margin: 0 auto;
+  }
+  .step span {
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+
+  .btn-store {
+    justify-content: flex-end;
+  }
+  .btn-store > a {
+    margin-top: 20px;
+    width: 40%;
+  }
+  .btn-store > a img {
+    width: 40%;
+  }
+
+  .box img {
+    height: 200px;
+  }
+  .city {
+    margin-top: 5%;
+    font-size: 1.4rem;
+  }
+  blockquote {
+    padding: 2%;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.4rem;
+  }
+  cite {
+    font-size: 1.8rem;
+  }
+  cite img {
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 2%;
+  }
+  .plans {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .plan {
+    width: 40%;
+    padding: 2%;
+  }
+  .sub_plan {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+  .sub_plan div span {
+    font-size: 2.6rem;
+  }
+  .footer div ul {
+    width: 100%;
+  }
+  footer div ul a {
+    font-size: 1.4rem;
+  }
+  .btn-store > a {
+    margin-top: 10px;
+    width: 50%;
+  }
+}
+
+/* small tablets */
+@media only screen and (max-width: 767px) {
+  section {
+    padding: 30px 0;
+  }
+  .row,
+  .hero-text {
+    padding: 0 4%;
+  }
+  .col {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .main-nav {
+    display: none;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+  .features > .row > p {
+    font-size: 1.3rem;
+    width: 80%;
+    margin-left: 10%;
+  }
+  .meals-images {
+    height: 150px;
+  }
+  .steps {
+    flex-direction: column;
+  }
+
+  .steps .img img {
+    width: 250%;
+    margin: 0 auto;
+  }
+  .step {
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .step div {
+    padding: 5px;
+  }
+  .step div p {
+    font-size: 1.4rem;
+  }
+  .box img {
+    height: 550px;
+    margin-left: 5%;
+  }
+  h3 {
+    margin-left: 7%;
+    font-size: 1.8rem;
+  }
+  .city {
+    margin-top: 5%;
+    font-size: 1.4rem;
+    margin-left: 5%;
+  }
+  .city {
+    margin-top: 5px;
+    font-size: 1.4rem;
+  }
+  .testimonials {
+    flex-direction: column;
+  }
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+  .plan {
+    width: 80%;
+  }
+  .sub_plan {
+    font-size: 1.4rem;
+  }
+  .sub_plan div span {
+    font-size: 2.4rem;
+  }
+  form {
+    font-size: 1.6rem;
+  }
+  form div {
+    width: 90%;
+    padding: 10px;
+    align-items: center;
+  }
+  select {
+    margin-top: -15px;
+  }
+  #name,
+  #email {
+    padding: 10px;
+    font-size: 1.4rem;
+  }
+  .textarea {
+    margin-top: 20px;
+  }
+  textarea {
+    width: 80%;
+  }
+  .footer div ul {
+    flex-direction: column;
+  }
+  .footer div ul li {
+    margin-top: 3%;
+  }
+  footer {
+    padding: 20px;
+  }
+}
+
+/* phones */
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    margin-left: 0%;
+  }
+  .section-cities h3 {
+    margin-left: 7%;
+  }
+  .meals-images {
+    width: 100%;
+    display: flex;
+    height: 150px;
+  }
+  .meals-images li {
+    width: 50%;
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+  }
+  .meals-images li figure {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .meals-images li figure img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.15);
+    transition: all 0.4s;
+    opacity: 0.6;
+  }
+  .meals-images li figure img:hover {
+    transform: scale(1);
+    z-index: 2;
+    opacity: 1;
+  }
+}
