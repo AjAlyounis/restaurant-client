@@ -57,10 +57,23 @@ $(document).ready(function() {
       offset: "50%"
     }
   );
-
   // mobile nav
   $(".js-nav-icon").click(function() {
     let nav = $(".js-main-nav");
     nav.slideToggle(200);
   });
+
+  $(".js-icon-nav").click(function(){
+    let nav = $(".js-main-nav")
+    let icon =  $(".js-icon-nav i")
+    nav.slideToggle(200)
+
+    if(icon.hasClass("ion-navicon-round")){
+      icon.addClass("ion-close-round")
+      icon.removeClass("ion-navicon-round")
+    }else {
+      icon.addClass("ion-navicon-round")
+      icon.removeClass("ion-close-round")
+    }
+  })
 });

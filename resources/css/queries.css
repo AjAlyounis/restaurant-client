@@ -142,35 +142,55 @@
   h1 {
     font-size: 2.8rem;
   }
-  nav {
-    height: auto;
-  }
-.main-nav {
-  flex-direction: column
-}
 
-  .main-nav a {
-    font-size: 1.2rem;
-    margin-left: 0px;
-  }
-  .main-nav a:hover {
-    border-bottom: 0px solid transparent
+    .fixed-nav , nav {
+      height: auto;
+      display: block
     }
-
-  
-  /* fixed nav  */
-  .fixed-nav {
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 1px 1px rgba(109, 107, 107, 0.582);
-    z-index: 9999;
-    color: #555;
+    .fixed-nav {
+      position: fixed;
+      background-color: rgba(255, 255, 255, 0.98);
+      box-shadow: 0 1px 1px rgba(109, 107, 107, 0.582);
+      z-index: 9999;
+      color: #555;
+    }
+    nav li ,.fixed-nav li {
+      margin-top:10px
+    }
+    .fixed-nav li a {
+      color: #555;
+      font-size: 1.4rem;
+    }
+.main-nav {
+  display: none
+}
+nav .main-nav , .fixed-nav .main-nav{
+  float: left;
+  margin-top: -50px;
+  margin-left: 140px;
+}
+nav .main-nav {
+  margin-left: 160px;
+}
+.main-nav a:hover {
+  border-bottom: 0px solid transparent
   }
-  .fixed-nav li a {
-    color: #555;
+   nav .mobile-nav-icon {
+    display:inline-block;
+    float: right;
+    margin-top: -50px;
+    color:red
   }
 
-
+.fixed-nav .mobile-nav-icon{
+    display:inline-block;
+    float: right;
+    margin-top:-50px
+  }
+.fixed-nav .mobile-nav-icon  i {
+  font-size: 3rem;
+  color:#ee5a24;
+}
   .features .box {
     padding: 2%;
     width: 45%;
@@ -309,7 +329,7 @@
     font-size: 1.4rem;
   }
   .hero-text {
-    top: 60%;
+    top: 40%;
     left: 50%;
   }
 
@@ -319,25 +339,17 @@
     padding: 10px 30px;
     margin-top: 10px;
   }
-  nav {
-    height: auto;
-    justify-content: flex-start;
-  }
-  .fixed-nav .main-nav {
-    padding: 0 0 10px 0;
-  }
-  .main-nav {
-    justify-content: baseline;
-    margin-left: 0%;
-    margin-top: 10%;
-  }
-  .main-nav a {
-    margin-left: 10px;
-    font-size: 1.3rem;
+
+  nav .main-nav , .fixed-nav .main-nav{
+    display: block;
+    float: left;
+    margin-left: 100px;
+    margin-top: -30px
   }
   .logo {
     width: 60px;
     height: 60px;
+    margin-left: 50px;
   }
   .features h3 {
     font-size: 1.3rem;

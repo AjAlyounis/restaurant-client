@@ -154,6 +154,14 @@ nav {
   color: #ee5a24;
   font-size: 5rem
 }
+.mobile-nav-icon {
+  display:none;
+  margin-right:40px;
+}
+.mobile-nav-icon  i {
+  font-size: 3rem;
+  color:#fff;
+}
 /* fixed nav  */
 .fixed-nav {
   position: fixed;
@@ -225,8 +233,6 @@ h2::after {
 .icon-feature {
   font-size: 4rem;
   color: #ee5a24;
-  display: block;
-  margin-bottom: 10px;
 }
 
 
