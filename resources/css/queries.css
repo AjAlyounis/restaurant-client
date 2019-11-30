@@ -7,24 +7,18 @@
   h1 {
     font-size: 3rem;
   }
+  nav , .fixed-nav {
+    height:auto
+  }
+  .main-nav {
+    margin:12px 15px 
+  }
 }
 
 /* big tablets */
 @media only screen and (max-width: 1023px) {
   section {
     padding: 60px 0;
-  }
-  .main-nav {
-    width: 80%;
-  }
-  .main-nav li a {
-    font-size: 1.4rem;
-  }
-  .logo {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-left: 40px;
   }
   h2 {
     font-size: 2.2rem;
@@ -33,14 +27,18 @@
     font-size: 1.4rem;
     margin-bottom: 5px;
   }
-  .features > .row > p {
+  .section-features {
     font-size: 1.3rem;
-    width: 60%;
-    margin-left: 20%;
   }
-  .features > .row > .box > p {
-    font-size: 1.2rem;
+  .features {
+    width:90%;
+    margin:0 auto
   }
+  .features .box {
+    width: 45%;
+    font-size: 1.3rem;
+  }
+
   .meals-images {
     height: 250px;
   }
@@ -68,6 +66,8 @@
   }
 
   .btn-store {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
     justify-content: flex-end;
   }
   .btn-store > a {
@@ -101,7 +101,10 @@
     margin-right: 2%;
   }
   .plans {
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   .plan {
@@ -136,35 +139,72 @@
   .hero-text {
     padding: 0 4%;
   }
-  .col {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .main-nav {
-    display: none;
-  }
   h1 {
     font-size: 2.8rem;
   }
-  .features > .row > p {
-    font-size: 1.3rem;
-    width: 80%;
-    margin-left: 10%;
+  nav {
+    height: auto;
   }
+.main-nav {
+  flex-direction: column
+}
+
+  .main-nav a {
+    font-size: 1.2rem;
+    margin-left: 0px;
+  }
+  .main-nav a:hover {
+    border-bottom: 0px solid transparent
+    }
+
+  
+  /* fixed nav  */
+  .fixed-nav {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 1px 1px rgba(109, 107, 107, 0.582);
+    z-index: 9999;
+    color: #555;
+  }
+  .fixed-nav li a {
+    color: #555;
+  }
+
+
+  .features .box {
+    padding: 2%;
+    width: 45%;
+  }
+  .features h3 {
+    font-size: 2rem;
+  }
+  .icon-feature {
+    font-size: 3rem;
+    margin-bottom: 5px;
+  }
+  
   .meals-images {
     height: 150px;
   }
+ 
   .steps {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
   .steps .img {
-    width: 250%;
     margin: 0 auto;
   }
   .step {
     margin-right: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .step div {
@@ -173,9 +213,17 @@
   .step div p {
     font-size: 1.4rem;
   }
+  .cities {
+    flex-wrap: wrap;
+  }
+  .cities .box {
+    width: 45%;
+    margin-top: 2%;
+  }
   .box img {
-    height: 550px;
-    margin-left: 5%;
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
   }
   h3 {
     margin-left: 7%;
@@ -191,10 +239,18 @@
     font-size: 1.4rem;
   }
   .testimonials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .plans {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .plan {
@@ -212,6 +268,8 @@
   form div {
     width: 90%;
     padding: 10px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   select {
@@ -229,6 +287,9 @@
     width: 80%;
   }
   .footer div ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .footer div ul li {
@@ -242,48 +303,77 @@
 /* phones */
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   h2 {
     font-size: 1.4rem;
   }
-  h3,
-  h3 {
-    margin-left: 0%;
-    font-size: 1.2rem;
+  .hero-text {
+    top: 60%;
+    left: 50%;
   }
 
-  .btn {
-    font-size: 1rem;
-    padding: 2px 5px;
-    margin: 10px;
+  .btn:link,
+  .btn:visited {
+    font-size: 1.4rem;
+    padding: 10px 30px;
+    margin-top: 10px;
   }
   nav {
-    height: 90px;
-    flex-direction: column;
+    height: auto;
+    justify-content: flex-start;
+  }
+  .fixed-nav .main-nav {
+    padding: 0 0 10px 0;
+  }
+  .main-nav {
+    justify-content: baseline;
+    margin-left: 0%;
+    margin-top: 10%;
+  }
+  .main-nav a {
+    margin-left: 10px;
+    font-size: 1.3rem;
   }
   .logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-left: 0;
+    width: 60px;
+    height: 60px;
   }
-  .features > .row > p {
-    font-size: 1.2rem;
-    width: 70%;
-    margin-left: 15%;
-    line-height: 1.5;
-    margin-bottom: 10px;
+  .features h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin:0;
   }
+  .section-features > .row > p {
+    width:100%;
+    margin:0;
+    font-size: 1.4rem
+  }
+  .features{
+    flex-direction: column
+  }
+  .features .box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
   .steps .img {
     width: 60%;
     margin: 0 auto;
   }
   .step {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .step div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 5px;
     padding: 5px;
@@ -309,13 +399,20 @@
   .btn-store > a img {
     width: 90%;
   }
+
   .section-cities h3 {
-    margin-left: 7%;
+    margin-left: 5%;
+  }
+  .cities {
+    flex-direction: column;
+  }
+  .cities .box {
+    width: 80%;
   }
 
-  .box img {
-    width: 100%;
-    height: 200px;
+  .cities .box img {
+    width: 90%;
+    height: 300px;
   }
 
   .city {
@@ -349,12 +446,11 @@
   }
 
   .plan {
-    width: 100%;
-    padding: 1%;
-    margin-top: 1%;
+    width: 80%;
+    height:430px
   }
   .sub_plan {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .sub_plan div {
     padding: 15px;
@@ -388,15 +484,18 @@
   #email {
     width: 80%;
     margin-left: 10%;
-    padding: 1px;
+    padding: 5px;
     font-size: 1rem;
+    border: 1px solid rgb(175, 172, 172);
+    border-radius: 10px;
   }
   form > div > h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
   }
   select {
     font-size: 1rem;
+    border: 1px solid rgb(175, 172, 172);
   }
   .textarea {
     width: 100%;
@@ -404,6 +503,8 @@
   textarea {
     font-size: 1rem;
     width: 100%;
+    border: 1px solid rgb(175, 172, 172);
+    border-radius: 10px;
   }
   select {
     margin-top: -10px;
